@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="DataFrameAnalyzer",
-    version="1.0.0",
+    version="1.0.1",
     description="A Python package for dataframe based summary statistics calculation, percentage change computation, outlier detection, trend analysis, moving average calculation, correlation analysis, and seasonal pattern interpretation.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
