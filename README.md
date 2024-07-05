@@ -1,4 +1,4 @@
-# DataFrameAnalyzer
+# DataFrame Statistical Analyzer
 
 The `DataFrameAnalyzer` project provides a robust and extensible tool for analyzing and visualizing data stored in a Pandas DataFrame. The tool encapsulates various data analysis functionalities, including summary statistics, percentage change computation, outlier detection, trend analysis, moving average calculation, correlation analysis, and seasonal pattern interpretation. The project is designed following the SOLID principles and incorporates design patterns to ensure maintainability and ease of use.
 
