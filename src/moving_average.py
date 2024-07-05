@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class MovingAverage:
     def __init__(self, df):
         self.df = df

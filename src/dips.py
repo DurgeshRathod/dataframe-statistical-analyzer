@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class Dips:
     def __init__(self, df):
         self.df = df

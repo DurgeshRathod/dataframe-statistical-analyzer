@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class OutliersIQR:
     def __init__(self, df):
         self.df = df
@@ -12,5 +13,7 @@ class OutliersIQR:
             iqr = q3 - q1
             lower_bound = q1 - 1.5 * iqr
             upper_bound = q3 + 1.5 * iqr
-            outliers[column] = self.df[(self.df[column] < lower_bound) | (self.df[column] > upper_bound)]
+            outliers[column] = self.df[
+                (self.df[column] < lower_bound) | (self.df[column] > upper_bound)
+            ]
         return outliers

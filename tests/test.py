@@ -1,7 +1,16 @@
+import os
+import sys
+
+# Get the current directory of the script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Append the parent directory to Python's sys.path
+parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
+sys.path.append(parent_dir)
+
 import pandas as pd
 
-from dataframe_statistical_analyzer import DataFrameAnalyzer
-
+from src.dataframe_statistical_analyzer import DataFrameAnalyzer
 
 if __name__ == "__main__":
     data = {

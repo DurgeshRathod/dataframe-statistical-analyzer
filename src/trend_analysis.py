@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
+
 class TrendAnalysis:
     def __init__(self, df):
         self.df = df

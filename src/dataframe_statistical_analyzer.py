@@ -1,12 +1,13 @@
 import pandas as pd
-from src.summary_statistics import SummaryStatistics
-from src.pct_change import PercentageChange
-from src.outliers_iqr import OutliersIQR
-from src.dips import Dips
-from src.trend_analysis import TrendAnalysis
-from src.moving_average import MovingAverage
+
 from src.correlation_analysis import CorrelationAnalysis
+from src.dips import Dips
 from src.increases import Increases
+from src.moving_average import MovingAverage
+from src.outliers_iqr import OutliersIQR
+from src.pct_change import PercentageChange
+from src.summary_statistics import SummaryStatistics
+from src.trend_analysis import TrendAnalysis
 
 
 class DataFrameAnalyzer:
@@ -52,3 +53,40 @@ class DataFrameAnalyzer:
         output.append(str(self.df))
 
         return "\n".join(output)
+
+
+if __name__ == "__main__":
+    data = {
+        "month": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ],
+        "stock_price": [
+            50.0,
+            51.5,
+            49.8,
+            52.0,
+            53.2,
+            54.0,
+            55.0,
+            56.0,
+            57.5,
+            59.0,
+            60.0,
+            61.0,
+        ],
+    }
+
+    df = pd.DataFrame(data)
+    a = DataFrameAnalyzer(df)
+    print(a.analyze())
