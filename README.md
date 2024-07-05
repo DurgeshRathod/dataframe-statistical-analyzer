@@ -4,14 +4,16 @@ The `DataFrameAnalyzer` project provides a robust and extensible tool for analyz
 
 ## Features
 
-- **Summary Statistics**: Generate summary statistics for the data.
-- **Percentage Change Calculation**: Calculate percentage changes over specified periods.
-- **Outlier Detection**: Detect outliers using both Z-score and MAD methods.
-- **Trend Analysis**: Perform linear regression to analyze trends in the data.
-- **Moving Average Calculation**: Calculate moving averages over a specified window.
-- **Correlation Analysis**: Compute the correlation matrix of the data.
-- **Seasonal Pattern Interpretation**: Interpret seasonal patterns using Holt-Winters exponential smoothing.
-- **Data Visualization**: Visualize data with trends and moving averages.
+- **Summary Statistics**: Statistical summary of the DataFrame.
+- **Month-to-Month Percentage Changes**: Percentage changes between consecutive months.
+- **Outliers Detection (Z-score > 3)**: DataFrame segments identified as outliers based on Z-score.
+- **Outliers Detection (MAD)**: DataFrame segments identified as outliers based on Median Absolute Deviation.
+- **Trend Analysis (Linear Regression)**: Slope and intercept of linear trends for numeric columns.
+- **Moving Average (3 months window)**: Moving average values for numeric columns over a 3-month window.
+- **Calculating DIPS**: DataFrame segments identified as dips below certain thresholds.
+- **Calculating Increases**: DataFrame segments identified as increases above certain thresholds.
+- **Seasonal Patterns**: Monthly seasonal patterns identified using Holt-Winters exponential smoothing.
+- **Correlation Analysis**: Correlation matrix between numeric columns.
 
 ## Installation
 
@@ -53,6 +55,20 @@ The `DataFrameAnalyzer` project provides a robust and extensible tool for analyz
    ```python
    analyzer.analyze()
    ```
+5. Expected Outputs
+When you run the analyze() method of DataFrameAnalyzer, you can expect to see the following outputs:
+
+- **Summary Statistics**: Statistical summary of the DataFrame.
+- **Month-to-Month Percentage Changes**: Percentage changes between consecutive months.
+- **Outliers Detection (Z-score > 3)**: DataFrame segments identified as outliers based on Z-score.
+- **Outliers Detection (MAD)**: DataFrame segments identified as outliers based on Median Absolute Deviation.
+- **Trend Analysis (Linear Regression)**: Slope and intercept of linear trends for numeric columns.
+- **Moving Average (3 months window)**: Moving average values for numeric columns over a 3-month window.
+- **Calculating DIPS**: DataFrame segments identified as dips below certain thresholds.
+- **Calculating Increases**: DataFrame segments identified as increases above certain thresholds.
+- **Seasonal Patterns**: Monthly seasonal patterns identified using Holt-Winters exponential smoothing.
+- **Correlation Analysis**: Correlation matrix between numeric columns.
+
 
 ## Contributing
 
