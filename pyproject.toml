@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dataframe-statistical-analyzer"
-version = "1.0.1"
+version = "1.0.2"
 description = "The `DataFrame Statistical Analyzer` package provides a utility tool for statistical analyzing in a Pandas DataFrame."
 authors = ["Durgesh Rathod"]
 readme = "README.md"

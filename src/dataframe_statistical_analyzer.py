@@ -13,14 +13,14 @@ from src.trend_analysis import TrendAnalysis
 class DataFrameAnalyzer:
     def __init__(self, df):
         self.df = df
-        self.summary_stats = SummaryStatistics(df)
-        self.pct_change = PercentageChange(df)
-        self.outliers_iqr = OutliersIQR(df)
-        self.dips = Dips(df)
-        self.trend_analysis = TrendAnalysis(df)
-        self.moving_average = MovingAverage(df)
-        self.correlation_analysis = CorrelationAnalysis(df)
-        self.increases = Increases(df)
+        self.summary_stats: SummaryStatistics = SummaryStatistics(df)
+        self.pct_change: PercentageChange = PercentageChange(df)
+        self.outliers_iqr: OutliersIQR = OutliersIQR(df)
+        self.dips: Dips = Dips(df)
+        self.trend_analysis: TrendAnalysis = TrendAnalysis(df)
+        self.moving_average: MovingAverage = MovingAverage(df)
+        self.correlation_analysis: CorrelationAnalysis = CorrelationAnalysis(df)
+        self.increases: Increases = Increases(df)
 
     def analyze(self):
         output = []
